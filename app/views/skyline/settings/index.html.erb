@@ -1,0 +1,30 @@
+<% content_for :left do %>
+  <dt><span class="content"><%=t(:group_title, :scope => [:settings]) %></span></dt>
+  <dd>
+    <ul class="selectlist">
+    	<li>Nothing to see here.</li>
+    </ul>
+  </dd>
+<% end %>
+
+<dl id="contentPanel" class="panel">
+  <dt id="contentHeaderPanel">
+    <span class="content">
+      Settings
+    </span>
+  </dt>
+  <dd id="contentBodyPanel">
+    <div id="contentEditPanel" class="panel scrollable">        
+      <div class="content editcontent">
+      	You don't have any settings defined for this application. (yet)
+      </div>
+    </div>
+  </dd>
+  <dd id="contentFooterPanel" class="footer">
+  	<div class="content">
+  	  <div class="submit">
+        Settings page
+      </div>
+    </div>
+  </dd>
+</dl>

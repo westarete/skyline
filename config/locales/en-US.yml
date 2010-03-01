@@ -364,7 +364,7 @@
       media_library: "Media library"
       admin: "Admin"
       settings: "Settings"
-      users: "Usermanagement"
+      users: "User Management"
   authentication:
     logout: "Log out"
     logged_in_as: "Logged in as <strong>{{user}}</strong>"
