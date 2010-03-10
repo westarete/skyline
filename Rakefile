@@ -84,7 +84,7 @@ namespace :gem do
     gemspec.add_dependency "rails", "2.3.5"
     gemspec.add_dependency "rack", "1.0.1"
       
-    gemspec.add_dependency "polyglot", "0.2.6"
+    gemspec.add_dependency "polyglot", "0.3.0"
     gemspec.add_dependency "sprockets", "1.0.2"
     gemspec.add_dependency "mime-types", "1.16"
     gemspec.add_dependency "rmagick", "2.9.1"

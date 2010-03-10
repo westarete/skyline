@@ -23,7 +23,7 @@ gem "mysql", "2.8.1"
 #
 # Otherwise the gem will not work!
 
-gem "polyglot", "0.2.6"
+gem "polyglot", "0.3.0"
 gem "sprockets", "1.0.2"
 gem "mime-types", "1.16",                   :require_as => "mime/types"
 gem "rmagick", "2.9.1",                     :require_as => "RMagick"
