@@ -98,7 +98,16 @@ class Skyline::InlineRef < Skyline::RefObject
     # ==== Returns
     # Array:: Array of ids of refering objects
     def find_ref_ids_for_object(refering_object, refering_column_name)            
-      Skyline::InlineRef.connection.select_values("SELECT id FROM #{self.table_name} WHERE refering_id = '#{refering_object.id}' AND refering_type = '#{refering_object.class.name}' AND refering_column_name = '#{refering_column_name.to_s}'").map(&:to_i)
+      #Skyline::InlineRef.connection.select_values("SELECT id FROM #{self.table_name} WHERE refering_id = '#{refering_object.id}' AND refering_type = '#{refering_object.class.name}' AND refering_column_name = '#{refering_column_name.to_s}'").map(&:to_i)
+      Skyline::InlineRef.find(
+        :all, 
+        :select => "id", 
+        :conditions => {
+          :refering_id => refering_object.id, 
+          :refering_type => refering_object.class.name, 
+          :refering_column_name => refering_column_name.to_s
+        }
+      ).map(&:to_i)
     end
     # create ref_object from html node
     #
