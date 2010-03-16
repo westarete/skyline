@@ -87,7 +87,7 @@ namespace :gem do
     gemspec.add_dependency "polyglot", "0.3.0"
     gemspec.add_dependency "sprockets", "1.0.2"
     gemspec.add_dependency "mime-types", "1.16"
-    gemspec.add_dependency "rmagick", "2.9.1"
+    gemspec.add_dependency "rmagick", "1.15.13"
     gemspec.add_dependency "hpricot", "0.8.2"
     gemspec.add_dependency "guid", "0.1.1"
     gemspec.add_dependency "will_paginate", "~>2.3.11"
