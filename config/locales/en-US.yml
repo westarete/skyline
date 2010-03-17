@@ -369,8 +369,8 @@
     logged_in_as: "Logged in as <strong>{{user}}</strong>"
     new:
       log_in: "Log in"
-      email: "E-mailadres"
-      password: "Wachtwoord"
+      email: "Email Address"
+      password: "Password"
     create: 
       flashes: 
         error: "Could not login, please check your e-mail address and password and try again."
