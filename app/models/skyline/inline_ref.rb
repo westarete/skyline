@@ -111,7 +111,7 @@ class Skyline::InlineRef < Skyline::RefObject
           :refering_type => refering_object.class.name, 
           :refering_column_name => refering_column_name.to_s
         }
-      ).map(&:to_i)
+      ).collect(&:id)
     end
     # create ref_object from html node
     #
