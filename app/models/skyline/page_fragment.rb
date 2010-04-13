@@ -1,3 +1,4 @@
+# Fragments are one kind of Article.
 class Skyline::PageFragment < Skyline::Article
   class Data < Skyline::Article::Data
     protected

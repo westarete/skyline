@@ -1,3 +1,5 @@
+# This is the English translation file. Please refer to this file if you seen broken
+# English anywhere on the administrative side of the website.
 "en-US":
   date:
     formats:
@@ -373,7 +375,7 @@
       password: "Password"
     create: 
       flashes: 
-        error: "Could not login, please check your e-mail address and password and try again."
+        error: "Could not login, please check your email address and password and try again."
   user:
     roles:
       super: "Super admin"      
@@ -437,7 +439,7 @@
       dialog_title: "Editing has been taken over"
       message: "{{user}} has forcefully taken over editing of this page."
       action_to_take: "What do you want to do with your changes?"
-      ignore_changes: "Discard my changed."
+      ignore_changes: "Discard my changes."
       save_as_new_variant: "Save my changes to a new variant."
       variant_name: "Name of new variant:"
       
@@ -475,12 +477,12 @@
       updated_at: "Changed on:"
       identical_published_variant: "Identical to publication:"
       last_published: "Last publication:"
-      published_variant: "Gepublished variant:"
+      published_variant: "Published variant:"
       number_of_publications: "This page has been published <strong>{{count}} times</strong>."
       publication_history: "Publication history:"
       publication_history_link: "View previous publications"
       confirm_delete_variant: "Are you sure you want to remove this variant?"
-      confirm_delete: "Are you sure you want do remove the whole article with it's publication history?"
+      confirm_delete: "Are you sure you want to remove the whole article with its publication history?"
       currently_editing_since: "{{user}} has started editing {{duration}} ago ({{since}})."
       currently_editing_by: "This article is currently being modified by {{user}}."
       force_editing: "Would you like to edit this article regardless?"
@@ -510,12 +512,12 @@
       add_page_in: "In page"
       number_of_publications: "This page has been published <strong>{{count}} times</strong>."
       confirm_delete: "Are you sure you would like to remove the whole page including its publication history?"
-      currently_editing_by: "This article is currently being modified by {{user}}"
+      currently_editing_by: "This article is currently being modified by {{user}}."
       force_editing: "Do you still want to edit this page?"
     update:
       flashes:
         success: "Page successfully saved"
-        error: "The page could not be saved because an error occured, please check your input and try again."
+        error: "The page could not be saved because an error occurred, please check your input and try again."
         locked: "The page is blocked"
         unlocked: "Page is unblocked"
         lock_failed: "Blocking the page was unsuccessful"
@@ -563,7 +565,7 @@
         flashes:
           success: "Article unpublished successfully"
           error: "Article cannot be unpublished"
-          error_persistent: "The article could not be unpublished because it has been made persistant."
+          error_persistent: "The article could not be unpublished because it has been made persistent."
     page:
       create:
         flashes:
@@ -573,7 +575,7 @@
         flashes:
           success: "Page unpublished successfully"
           error: "Page cannot be unpublished"
-          error_persistent: "The page could not be unpublished because it has been made persistant."
+          error_persistent: "The page could not be unpublished because it has been made persistent."
   page_version:
     default_name: "main"
     default_title: "New page"
@@ -643,12 +645,12 @@
   content:
     headers:
       actions: "Actions"
-    head: Content elements
-    menu: Content elements
-    default_group: Content elements
+    head: "Content elements"
+    menu: "Content elements"
+    default_group: "Content elements"
     breadcrumb_prefix: "Breadcrumb:"
-    add_a_new: Add {{class}}
-    add_more: Add more {{class}}
+    add_a_new: "Add {{class}}"
+    add_more: "Add more {{class}}"
     pagination:
       number_of: "Nubmer of {{class}}:"
       pages: "Pages:"
@@ -663,33 +665,33 @@
       display:
         empty: Empty
       joinable_list:
-        adding: "{{class}} beeing added..."
+        adding: "Adding {{class}}..."
         add_to: "add to {{class}}"
     flashes:
-      invalid_record: Not good - ActiveRecord::RecordInvalid
-      successfully_saved: The {{class}} is saved
-      validation_error: The {{class}} could not be saved. Check your input and try again.
-      successfully_deleted: The {{class}} has been deleted.
-      fail_deleted: The {{class}} could not be deleted
+      invalid_record: "Not good - ActiveRecord::RecordInvalid"
+      successfully_saved: "The {{class}} is saved"
+      validation_error: "The {{class}} could not be saved. Check your input and try again."
+      successfully_deleted: "The {{class}} has been deleted."
+      fail_deleted: "The {{class}} could not be deleted"
       version_conflict: >
         <strong>Alert!</strong> This version ({{your_version}}) could not be saved. A newer version ({{current_version}})
         creaded by <em>{{current_author}}</em> is available. Compare your version with the current version
         before saving. {{show_link}}
-      successfully_imported: The import was successful
-      no_import_file_selected: Import was not successful, the XML file was not uploaded.
-      import_failed: Import was not successful, check the XML file.
+      successfully_imported: "The import was successful."
+      no_import_file_selected: "Import was not successful, the XML file was not uploaded."
+      import_failed: "Import was not successful, check the XML file."
     index:
       title: "{{value}} &mdash; Content"
-      intro: On the left side you can see all the possible content-types. Choose one of the content-types to view, edit or delete.
+      intro: "On the left side you can see all the possible content-types. Choose one of the content-types to view, edit or delete."
     list:
       info: "Details"
-      confirm_deletion: Are you sure you want to delete {{class}}?
+      confirm_deletion: "Are you sure you want to delete {{class}}?"
       up_one_level: ".. move up"    
       blank_slate: "there are no {{class}}"    
       export: "Export &raquo;"
       import: "Import &raquo;"
-      title: Content list &mdash; {{class}}
-      title_sublisting: Content list &mdash; {{group}} for {{title}}
+      title: "Content list &mdash; {{class}}"
+      title_sublisting: "Content list &mdash; {{group}} for {{title}}"
       filter: Filter
       filter_none: "-- no filter --"    
       filter_apply: Apply filter
@@ -697,22 +699,22 @@
       dialog_title: "Import"
       choose_file: "Choose file to be imported (XML)"
     create:
-      title: Create {{class}}
+      title: "Create {{class}}"
     edit:
       title: "Edit {{class}}: {{title}}"
       meta_information: Meta details
       available_tags: "Available tags:"
       available_tags_info: "(click on a tag to select or deselect the tag)"
-      no_tags_available: "There are currently no tags, to add new tags enter them in the box above."
-      tags: Tags
-      publish: Publish
-      published: Published
-      publish_automatically_at: "Publiceren automaticaly on:"
+      no_tags_available: "There are currently no tags; to add new tags, enter them in the box above."
+      tags: "Tags"
+      publish: "Publish"
+      published: "Published"
+      publish_automatically_at: "Publish automatically at:"
       add_a_to_b: "add {{a}} to {{b}}"    
-      add_multiple: Add multiple (avoids closing this window)
-      version_conflict: <strong>Attention</strong> Saving will override the changes made by {{current_author}}
-      see_changes_by: Click here to view the changes of {{current_author}}.
-      discard_changes: Discard my changes
+      add_multiple: "Add multiple (avoids closing this window)"
+      version_conflict: "<strong>Attention</strong> Saving will override the changes made by {{current_author}}"
+      see_changes_by: "Click here to view the changes of {{current_author}}."
+      discard_changes: "Discard my changes"
     show:
       title: "View {{class}}: {{title}}"
       currently_viewing: >
@@ -722,13 +724,13 @@
       title: this content-type does not exist.
       intro:       
     global:
-      logged_in_on: Logged in on
-      logged_in_on_as: as <strong>%s</strong>
-      logged_in_as: Logged in as <strong>%s</strong>
-      logout: Logout
-      cancel: Cancel,
-      close_window: Close window  
-      loading: Please wait...        
+      logged_in_on: "Logged in on"
+      logged_in_on_as: "as <strong>%s</strong>"
+      logged_in_as: "Logged in as <strong>%s</strong>"
+      logout: "Logout"
+      cancel: "Cancel"
+      close_window: "Close window"
+      loading: "Please wait..."      
           
   tinymce:
     skyline_table: {

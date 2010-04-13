@@ -1,3 +1,4 @@
+# Pages are one kind of Article.
 class Skyline::Page < Skyline::Article
   class Data < Skyline::Article::Data
     before_validation :sanitize_url_part
