@@ -231,7 +231,7 @@ class Skyline::Page < Skyline::Article
   
   def process_move_behind
     if @do_move_behind
-      if move_behind = self.class.find_by_id(@move_behind)
+      if @move_behind != nil && move_behind = self.class.find_by_id(@move_behind)
         self.class.connection.execute("UPDATE #{self.class.table_name} SET position=position+1 WHERE parent_id=#{self.parent_id} AND position > #{move_behind.position}")
         self.class.connection.execute("UPDATE #{self.class.table_name} SET position=#{move_behind.position + 1} WHERE id=#{self.id}")
       else
