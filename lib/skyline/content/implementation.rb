@@ -30,7 +30,7 @@ class Skyline::Content::Implementation
     
   # Does this implementations have a Settings class?
   def has_settings?
-    "Setting".constantize
+    "Settings".constantize
     true
   rescue NameError
     false
@@ -39,7 +39,7 @@ class Skyline::Content::Implementation
   
   # The settings class for this implementation
   def settings
-    "Setting".constantize if self.has_settings?
+    "Settings".constantize if self.has_settings?
   end
   
   # Retrieve a content_class from the Implementation namespace by type
