@@ -133,7 +133,7 @@ class Skyline::InlineRef < Skyline::RefObject
         result
       end
    
-      new_ref = skyline_class.find_by_id_and_refering_type_and_refering_id_and_refering_column_name(id,refering_object.class.name,refering_object.id,refering_column_name.to_s) if id
+      new_ref = skyline_class.find_by_id_and_refering_type_and_refering_id_and_refering_column_name(id,refering_object.class.name,refering_object.id,refering_column_name.to_s) unless id.blank?
       logger.warn "--> new_ref.id : #{new_ref && new_ref.id}"
       new_ref ||= skyline_class.new
 
