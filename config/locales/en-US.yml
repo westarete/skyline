@@ -694,15 +694,6 @@
       title: this content-type does not exist.
       intro:       
     global:
-<<<<<<< HEAD
-      logged_in_on: "Logged in on"
-      logged_in_on_as: "as <strong>%s</strong>"
-      logged_in_as: "Logged in as <strong>%s</strong>"
-      logout: "Logout"
-      cancel: "Cancel"
-      close_window: "Close window"
-      loading: "Please wait..."      
-=======
       logged_in_on: Logged in on
       logged_in_on_as: as <strong>%s</strong>
       logged_in_as: Logged in as <strong>%s</strong>
@@ -740,8 +731,6 @@
         metadata: "Details"
         destroy: "Delete"
         confirm_destroy: "Are your sure you want to delete {{name}}?"
-  
->>>>>>> da4cf422bc39d08beeeaf8f7e3c468485499e612
           
   tinymce:
     skyline_table: {
