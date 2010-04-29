@@ -108,6 +108,7 @@ class Skyline::InlineRef < Skyline::RefObject
         }
       ).collect(&:id)
     end
+    
     # create ref_object from html node
     #
     # ==== Parameters
