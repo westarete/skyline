@@ -461,7 +461,6 @@ form.upload ul.files li.failed  { background-image: url(../images/icons/file-fai
 
 .tree{
   position: relative;
-  font-size: 1.1em;
   background: #fff;
   padding: 3px;
 }
@@ -961,7 +960,6 @@ div.progressbar .bar{
 /* ============ */
 
 .messages{
-  font-size: 1.1em;
   margin: 0;
 }
 
@@ -2179,10 +2177,6 @@ div.button{
 
 .scrollable{
   overflow: auto;
-}
-
-.content{
-  font-size: 1.1em;  
 }
 
 .content p{
