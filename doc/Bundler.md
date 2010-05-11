@@ -29,7 +29,7 @@ the following code:
 Create initializer for Bundler
 ------------------------------
 
-Create file called `config/preinitializer.rb` and add the follwoing line:
+Create file called `config/preinitializer.rb` and add the following line:
 
     require "#{File.dirname(__FILE__)}/../vendor/bundler_gems/environment"
 
