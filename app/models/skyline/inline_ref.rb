@@ -98,7 +98,15 @@ class Skyline::InlineRef < Skyline::RefObject
     # ==== Returns
     # Array:: Array of ids of refering objects
     def find_ref_ids_for_object(refering_object, refering_column_name)            
-      Skyline::InlineRef.connection.select_values("SELECT id FROM #{self.table_name} WHERE refering_id = '#{refering_object.id}' AND refering_type = '#{refering_object.class.name}' AND refering_column_name = '#{refering_column_name.to_s}'").map(&:to_i)
+      # Skyline::InlineRef.connection.select_values("SELECT id FROM #{self.table_name} WHERE refering_id = '#{refering_object.id}' AND refering_type = '#{refering_object.class.name}' AND refering_column_name = '#{refering_column_name.to_s}'").map(&:to_i)
+      Skyline::InlineRef.find(
+        :all, 
+        :conditions => {
+          :refering_id => refering_object.id, 
+          :refering_type => refering_object.class.name, 
+          :refering_column_name => refering_column_name.to_s
+        }
+      ).collect(&:id)
     end
     
     # create ref_object from html node
@@ -126,7 +134,7 @@ class Skyline::InlineRef < Skyline::RefObject
         result
       end
    
-      new_ref = skyline_class.find_by_id_and_refering_type_and_refering_id_and_refering_column_name(id,refering_object.class.name,refering_object.id,refering_column_name.to_s) if id
+      new_ref = skyline_class.find_by_id_and_refering_type_and_refering_id_and_refering_column_name(id,refering_object.class.name,refering_object.id,refering_column_name.to_s) unless id.blank?
       logger.warn "--> new_ref.id : #{new_ref && new_ref.id}"
       new_ref ||= skyline_class.new
 

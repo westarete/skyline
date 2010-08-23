@@ -1,7 +1,7 @@
 class CreateSkylineWysiwygSections < ActiveRecord::Migration
   def self.up
     create_table :skyline_wysiwyg_sections do |t|
-      t.column :body, :mediumtext
+      t.column :body, :text
       t.timestamps
     end
   end
