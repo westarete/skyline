@@ -711,6 +711,10 @@
       edit:
         actions: "Actions"
         edit: "Edit"
+      update:
+        flashes:
+          success: "Update successfully completed."
+          error: "Update failed."
     files:
       new:
         files: "files"

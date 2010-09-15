@@ -4,3 +4,4 @@ ydoc/*
 pkg/*
 skylinecms.gemspec
 public/skyline/javascripts/doc/
+.rvmrc
