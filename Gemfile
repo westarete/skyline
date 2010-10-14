@@ -10,7 +10,7 @@
 # disable_system_gems
 
 
-source "http://www.rubygems.org"
+source :rubygems
 
 gem "rails", "2.3.5"
 gem "rack", "1.0.1"
@@ -25,9 +25,9 @@ gem "mysql", "2.8.1"
 
 gem "polyglot", "0.3.0"
 gem "sprockets", "1.0.2"
-gem "mime-types", "1.16",                   :require => "mime/types"
-gem "rmagick", "1.15.13",                     :require => "RMagick"
-gem "hpricot", "0.8.2",                     :require => "hpricot"
+gem "mime-types", "1.16",        :require => "mime/types"
+gem "rmagick", "1.15.13",        :require => "RMagick"
+gem "hpricot", "0.8.2",          :require => "hpricot"
 gem "guid", "0.1.1"
 gem "will_paginate", "~>2.3.11"
 gem "seed-fu", "~>1.2.0"
