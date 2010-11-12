@@ -5,11 +5,11 @@
 
 Gem::Specification.new do |s|
   s.name = %q{skylinecms}
-  s.version = "3.0.8.20101014"
+  s.version = "3.0.8.20101112"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["DigitPaint"]
-  s.date = %q{2010-10-14}
+  s.date = %q{2010-11-12}
   s.default_executable = %q{skylinecms}
   s.description = %q{Skyline is an extremely flexible and expandable open source content management system. Its feature rich interface allows for fast and intuitive management of websites.}
   s.email = %q{info@digitpaint.nl}
