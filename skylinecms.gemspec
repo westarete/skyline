@@ -5,7 +5,7 @@
 
 Gem::Specification.new do |s|
   s.name = %q{skylinecms}
-  s.version = "3.0.8.20101112"
+  s.version = '3.0.8.20130109'
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["DigitPaint"]
