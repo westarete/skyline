@@ -378,14 +378,17 @@ class Skyline::Rendering::Renderer
       module_name << "_helper" if module_name !~ /_helper$/
       module_name = module_name.camelize
       module_name = "::#{module_name}" if module_name !~ /^::/
-      self.send(:include, module_name.constantize)      
+      self.send(:include, module_name.constantize)
     end
     module_function :helper
 
     # Load all helpers
-    Dir[Rails.root + "app/helpers/**/*_helper.rb"].each do |helper|
-      self.helper helper.sub(%r{Rails.root + "app/helpers/"},"").sub(/_helper\.rb$/,"")
-    end  
+    Dir[Rails.root + "app/helpers/**/*_helper.rb"].each do |path|
+      if path =~ %r{(\w+)_helper\.rb$}
+        class_name = $1
+        self.helper class_name
+      end
+    end
     
   end
 end
