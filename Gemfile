@@ -9,12 +9,12 @@
 # 
 # disable_system_gems
 
-
 source :rubygems
 
-gem "rails", "2.3.5"
-gem "rack", "1.0.1"
-gem "mysql", "2.8.1"
+gem "rake", "~> 0.8.7"
+gem "rails", "~> 2.3"
+gem "rack"
+gem "mysql"
 
 # When changing these, make sure you also change:
 #
