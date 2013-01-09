@@ -384,7 +384,7 @@ class Skyline::Rendering::Renderer
 
     # Load all helpers
     Dir[Rails.root + "app/helpers/**/*_helper.rb"].each do |helper|
-      self.helper helper.sub(Rails.root + "app/helpers/","").sub(/_helper\.rb$/,"")
+      self.helper helper.sub(%r{Rails.root + "app/helpers/"},"").sub(/_helper\.rb$/,"")
     end  
     
   end
