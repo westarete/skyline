@@ -16,6 +16,9 @@ class Skyline::SprocketsMiddleware
   end
   
   def register_load_location(paths)
+    if ! paths.respond_to?(:map)
+      paths = [paths]
+    end
     all_paths = paths.map { |path| Dir[Pathname.new(@environment.root.absolute_location) + path].sort }.flatten.compact
     all_paths.each do |p|
       @environment.register_load_location(p)
