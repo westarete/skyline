@@ -80,12 +80,20 @@ class Skyline::InlineRef < Skyline::RefObject
       return value unless value.kind_of?(String)
       v = value.gsub(/\[REF:(\d+)\]/) do |match|
         i = match[5..-2]
-        refs[i.to_i].to_start_html(with_refs,options)
+        if refs[i.to_i]
+          refs[i.to_i].to_start_html(with_refs,options)
+        else
+          ""
+        end
       end
     
       outp = v.gsub(/\[\/REF:(\d+)\]/) do |match|
         i = match[6..-2]
-        refs[i.to_i].to_end_html
+        if refs[i.to_i]
+          refs[i.to_i].to_end_html
+        else
+          ""
+        end
       end
     end
     
