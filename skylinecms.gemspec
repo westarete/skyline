@@ -916,7 +916,7 @@ Gem::Specification.new do |s|
 
     if Gem::Version.new(Gem::VERSION) >= Gem::Version.new('1.2.0') then
       s.add_runtime_dependency(%q<thor>, ["= 0.12.0"])
-      s.add_runtime_dependency(%q<rails>, ["~> 2.3"])
+      s.add_runtime_dependency(%q<rails>, ["= 2.3.5"])
       s.add_runtime_dependency(%q<rack>)
       s.add_runtime_dependency(%q<polyglot>, ["= 0.3.0"])
       s.add_runtime_dependency(%q<sprockets>, ["= 1.0.2"])
@@ -928,7 +928,7 @@ Gem::Specification.new do |s|
       s.add_runtime_dependency(%q<seed-fu>, ["~> 1.2.0"])
     else
       s.add_dependency(%q<thor>, ["= 0.12.0"])
-      s.add_dependency(%q<rails>, ["~> 2.3"])
+      s.add_dependency(%q<rails>, ["= 2.3.5"])
       s.add_dependency(%q<rack>)
       s.add_dependency(%q<polyglot>, ["= 0.3.0"])
       s.add_dependency(%q<sprockets>, ["= 1.0.2"])
@@ -941,7 +941,7 @@ Gem::Specification.new do |s|
     end
   else
     s.add_dependency(%q<thor>, ["= 0.12.0"])
-    s.add_dependency(%q<rails>, ["~> 2.3.5"])
+    s.add_dependency(%q<rails>, ["= 2.3.5"])
     s.add_dependency(%q<rack>)
     s.add_dependency(%q<polyglot>, ["= 0.3.0"])
     s.add_dependency(%q<sprockets>, ["= 1.0.2"])
