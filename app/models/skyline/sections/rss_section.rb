@@ -8,7 +8,7 @@ class Skyline::Sections::RssSection < ActiveRecord::Base
 
   
   validates_numericality_of :show_count
-  validates_format_of_url :url, :schemes => %w{http}
+  validates_format_of_url :url, :schemes => %w{http https}
   
   cattr_accessor :cache_path
   @@cache_path ||= Skyline::Configuration.rss_section_cache_path  
